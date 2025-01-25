@@ -1,0 +1,27 @@
+.banner__signup{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.banner__imgs{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 45%;
+}
+
+
+@media (min-width: 1024px) {
+    .banner__signup{
+        height: 150px;
+    }
+
+}
+
+
+@media (min-width: 1500px) {
+    .banner__signup{
+        height: 200px;
+    }
+}

@@ -1,0 +1,26 @@
+.movie__container{
+    /* border: 2px solid yellow; */
+    margin-bottom: 5rem;
+    width: 150px;
+    height: 220px;
+    position: relative;
+}
+
+.movie__img{
+    width: 100%;
+    height: 100%;
+}
+
+.movie__title{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 94%;
+    left: -5%;
+    width: 80%;
+}
+
+.movie__genre{
+    text-align: end;
+    color: #6c6c6c;
+    font-weight: 0;
+}

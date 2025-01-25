@@ -1,0 +1,26 @@
+.banner__experience{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.banner__imge{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+
+@media (min-width: 1024px) {
+    .banner__experience{
+        height: 150px;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .banner__experience{
+        height: 200px;
+    }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+@font-face {
+    font-family: 'Machine';
+    src: url('./assets/fonts/Machine.ttf') format('truetype'),
+        url('./assets/fonts/Machine.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-bg-color: #051325;
+    --main-bg-color: #171717;
+    /* --main-bg-color: #1a1a1a; */
+    /* --secondary-color: #ab8ff9; */
+    --secondary-color: #78d3fe;
+    --secondary-color: #4cffb2;
+    --secondary-color: #b0f9a5;
+    --secondary-color: #a661e6;
+    --secondary-color: #8bffb1;
+    /* --secondary-color: #ffa954; */
+    /* --secondary-color: #4A1F43; */
+    --main-color: #ffffff;
+
+    /* VERDE */
+    /* --secondary-color: #ccffc9; */
+    /* AZUL */
+    /* --secondary-color: #c9fff8; */
+    /* AMARILLO */
+    /* --secondary-color: #ffffd8; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--main-color);
+    font-family: "Protest Strike";
+    /* font-family: "Machine"; */
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+#root {
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"; */
+    max-width: 100%;
+    /* width: 95%; RESPONSIVE */
+    width: 100%;
+    /* margin-top: 1rem; */
+    position: relative;
+}
