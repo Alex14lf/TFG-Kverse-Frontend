@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <div className="madeby">
-                <p>Made by Alejandro López</p>
+                <p className='madeby__title'>Made by Alejandro López</p>
             </div>
             <div className="footer__networks">
                 <a href=""><i className="fa-brands fa-instagram"></i></a>

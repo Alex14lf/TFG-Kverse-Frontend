@@ -5,11 +5,20 @@ import MovieCard from '../MovieCard/MovieCard';
 const Movies = () => {
   const movies = [
     { id: 1, title: 'Smile 2', genre: 'Terror', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
-    { id: 2, title: 'Jaws', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
-    { id: 3, title: 'The Conjuring', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
-    { id: 4, title: 'A Quiet Place In The Hoods', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
-    { id: 5, title: 'Scream', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
-    { id: 6, title: 'A Quiet Place In The Hoods', genre: 'Thriller', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
+    { id: 2, title: 'Jaws', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/1zfxOqu3Z0dFHWagzBQAaGJfHDZ.jpg' },
+    { id: 3, title: 'The Conjuring', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/jivUhECegXI3OYtPVflWoIDtENt.jpg' },
+    { id: 4, title: 'A Quiet Place In The Hoods', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/3BLaHhBRWCHjJHJaBPn1LJhLpzj.jpg' },
+    { id: 5, title: 'Scream', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/337MqZW7xii2evUDVeaWXAtopff.jpg' },
+    { id: 6, title: 'Smile 2', genre: 'Terror', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
+    { id: 7, title: 'Jaws', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/1zfxOqu3Z0dFHWagzBQAaGJfHDZ.jpg' },
+    { id: 8, title: 'The Conjuring', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/jivUhECegXI3OYtPVflWoIDtENt.jpg' },
+    { id: 9, title: 'A Quiet Place In The Hoods', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/3BLaHhBRWCHjJHJaBPn1LJhLpzj.jpg' },
+    { id: 10, title: 'Scream', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/337MqZW7xii2evUDVeaWXAtopff.jpg' },
+    { id: 11, title: 'Smile 2', genre: 'Terror', imageUrl: 'https://image.tmdb.org/t/p/original/lk4NNdeQrb6zbRSogDSdE6qmjk8.jpg' },
+    { id: 12, title: 'Jaws', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/1zfxOqu3Z0dFHWagzBQAaGJfHDZ.jpg' },
+    { id: 13, title: 'The Conjuring', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/jivUhECegXI3OYtPVflWoIDtENt.jpg' },
+    { id: 14, title: 'A Quiet Place In The Hoods', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/3BLaHhBRWCHjJHJaBPn1LJhLpzj.jpg' },
+    { id: 15, title: 'Scream', genre: 'Horror', imageUrl: 'https://image.tmdb.org/t/p/original/337MqZW7xii2evUDVeaWXAtopff.jpg' },
   ];
   return (
     <>

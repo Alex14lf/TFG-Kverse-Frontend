@@ -1,6 +1,9 @@
 .madeby{
     margin-left: 2rem;
 }
+.madeby__title{
+    color: var(--main-bg-color);
+}
 .footer__networks{
     padding-top: 0.5rem;
     display: flex;
