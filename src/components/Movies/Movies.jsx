@@ -23,9 +23,9 @@ const Movies = () => {
   return (
     <>
       <section className="billboard">
-        <h1 className="billboard__title">Sonic 3: La película</h1>
+        <h1 className="billboard__title">Babygirl</h1>
         {/* <img src="https://image.tmdb.org/t/p/original/oHPoF0Gzu8xwK4CtdXDaWdcuZxZ.jpg" alt="" className="billboard__poster" /> */}
-        <img src="https://image.tmdb.org/t/p/original/b85bJfrTOSJ7M5Ox0yp4lxIxdG1.jpg" alt="" className="billboard__poster" />
+        <img src="https://image.tmdb.org/t/p/original/hctfNoMpQGfn3VXdBYb9p0P5bT5.jpg" alt="" className="billboard__poster" />
         {/* <img src="https://image.tmdb.org/t/p/original/dWkdmxIkH9y23s9v1PjQFhTGIwo.jpg" alt="" className="billboard__poster" /> */}
         <i className="fa-solid fa-angle-left billboard__arrowl"></i>
         <i className="fa-solid fa-angle-right billboard__arrowr"></i>

@@ -4,7 +4,7 @@ const MovieDetail = () => {
   return (
     <>
       <section className="movdet__billboard">
-        <img src="https://image.tmdb.org/t/p/original/oHPoF0Gzu8xwK4CtdXDaWdcuZxZ.jpg" alt="" className="movdet__img" />
+        <img src="https://image.tmdb.org/t/p/original/q3Rgy4pQlPBou8ilYaVdHmjylyV.jpg" alt="" className="movdet__img" />
       </section>
       <h1>MOVIE DETAIL</h1>
     </>

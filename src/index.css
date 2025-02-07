@@ -10,21 +10,14 @@
 
 :root {
     --main-bg-color: #171717;
-    --secondary-color: #78d3fe;
-    --secondary-color: #ffa954;
-    --secondary-color: #ab8ff9;
-    --secondary-color: #a661e6;
+    /* --secondary-color: #78d3fe; */
+    /* --secondary-color: #ffa954; */
+    /* --secondary-color: #ab8ff9; */
+    /* --secondary-color: #a661e6; */
+    /* --secondary-color: #8bffb1; */
     --secondary-color: #4cffb2;
-    --secondary-color: #8bffb1;
     --main-color: #ffffff;
     --subtitle-color: #6c6c6c;
-
-    /* VERDE */
-    /* --secondary-color: #ccffc9; */
-    /* AZUL */
-    /* --secondary-color: #c9fff8; */
-    /* AMARILLO */
-    /* --secondary-color: #ffffd8; */
 }
 
 * {
