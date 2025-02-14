@@ -1,0 +1,13 @@
+.aux{
+    height: 50vh;
+}
+.loading{
+    height: 100vh;
+}
+
+.loading__title{
+    width: 400px;
+    margin: 0 auto;
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
