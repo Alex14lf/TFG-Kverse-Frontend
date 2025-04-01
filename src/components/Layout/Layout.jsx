@@ -1,20 +1,20 @@
 import React from 'react'
 import { Outlet,useLocation } from 'react-router-dom'
 import './Layout.css'
-import HeaderAuth from '../HeaderAuth/HeaderAuth'
+import HeaderUnauth from '../HeaderUnauth/HeaderUnauth'
 import Footer from '../Footer/Footer'
 
 const Layout = () => {
-    const location = useLocation();
+    // const location = useLocation();
     // Comprobar si la ruta actual requiere el header con position absolute
     // const isAbsoluteHeader = location.pathname === '/' || location.pathname === '/some-specific-route'; 
 
     return (
         <>
             {/* <header className={`header ${isAbsoluteHeader ? 'header__absolute' : 'header'}`}> */}
-            <header className='header__absolute'>
+            <header className='header'>
                 {/* Importamos el componente Header correspondiente */}
-                <HeaderAuth />
+                <HeaderUnauth />
             </header>
             <main className='main'>
                 {/* Aqui iran los compenentes que esten establecidos en cada ruta, ya que seran un sustitutivo de outlet. */}

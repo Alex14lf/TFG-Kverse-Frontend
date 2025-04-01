@@ -3,18 +3,21 @@ import { Link } from 'react-router-dom';
 import './Movies.css';
 import MovieCard from '../MovieCard/MovieCard';
 import Loading from '../Loading/Loading';
+// import Mantenimiento from '../Mantenimiento/Mantenimiento';
 import { useCarousel } from '../../hooks/useCarousel';
 import { useMovies } from '../../hooks/useMovies';
 
 const Movies = () => {
-  const { movies, loading } = useMovies();
-  console.log(movies)
+  const { movies, loading, error} = useMovies();
   const { activeMovie, nextMovie, prevMovie } = useCarousel(movies);
 
-  // Si no hay películas, mostrar un mensaje de error
-  if (!movies || movies.length === 0) {
-    return <Loading/>;
+  if (loading) {
+    return <Loading />;
   }
+
+  // if (error) {
+  //   return <Mantenimiento/>
+  // }
 
   return (
     <>
@@ -43,13 +46,6 @@ const Movies = () => {
           ))}
         </article>
       </section>
-
-      {/* Modal Section */}
-      <div className="modalsesion">
-        <div className="modalsesion__container">
-          <i className="fa-solid fa-x"></i>
-        </div>
-      </div>
     </>
   );
 };

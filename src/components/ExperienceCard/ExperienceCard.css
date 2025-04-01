@@ -1,0 +1,38 @@
+.experience__container{
+    /* border: 2px solid yellow; */
+    width: 320px;
+}
+
+.experience__container:hover .experience__title, 
+.experience__container:hover .experience__description {
+    color: var(--secondary-color); /* Cambia el color al hacer hover */
+}
+
+.experience__img{
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+.experience__title{
+    font-size: 1.5rem;
+    width: 80%;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.experience__title:hover{
+    color: var(--secondary-color);
+}
+
+
+.experience__description{
+}
+
+@media (min-width: 850px) {
+    .experience__container{
+        width: 450px;
+        height: 350px;
+    }
+
+}

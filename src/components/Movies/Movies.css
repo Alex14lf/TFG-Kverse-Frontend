@@ -18,7 +18,7 @@
     text-transform: uppercase;
     max-width: 60%;
     position: absolute;
-    top: 65%;
+    top: 80%;
     left: 5%;
     font-size: 2.4rem;
     letter-spacing: 0.1rem;
@@ -29,6 +29,7 @@
         -2px 2px 0 var(--main-color);
     color: var(--main-bg-color); */
     text-shadow: 2px 4px 6px var(--main-bg-color); 
+    transform: translateY(-50%);
 }
 
 .billboard__poster{
@@ -111,6 +112,7 @@
 }
 
 .movielist__title{
+    font-size: 2rem;
     text-align: center;
     padding: 3rem 0;
     color: var(--secondary-color);
@@ -121,53 +123,6 @@
     display: grid;
     justify-items: center; 
     grid-template-columns: repeat(2, 1fr);
-}
-
-.modalsesion{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-}
-
-.modalsesion__container{
-    width: 75vw;
-    height: 75vh;
-    background-color: var(--main-bg-color);
-    /* background-color: var(--secondary-color); */
-    position: absolute;
-    top: 55vh;          
-    left: 50%;         
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    /* display: none; */
-    animation: slide-in 1s forwards;
-}
-
-@keyframes slide-in {
-    from {
-        transform: translate(100%, -50%); 
-    }
-    to {
-        transform: translate(-50%, -50%); 
-    }
-}
-@keyframes slide-out {
-    from {
-        transform: translate(-50%, -50%);
-    }
-    to {
-        transform: translate(100%, -50%);
-    }
-}
-
-.modal__hidden {
-    animation: slide-out 1s forwards;
-    display: none; /* Agrega esto si quieres ocultar el modal después de la animación */
 }
 
 @media (min-width: 650px) {
@@ -228,7 +183,12 @@
     .billboard__title{
         font-size: 6rem;
     }
-    .fa-solid{
+    
+    .billboard__arrowl{
         font-size: 3rem
     }
+    .billboard__arrowr{
+        font-size: 3rem
+    }
+    
 }

@@ -3,17 +3,6 @@
     width: 100%;
     /* border: 2px solid red; */
     display: flex;
-    /* background-color: #ab8ff9; */
-    /* background-color: linear-gradient(#ab8ff9, rgba(255, 255, 255, 0)); */
-    background: linear-gradient(var(--secondary-color), #ab8ff900);
-    background: linear-gradient(var(--main-bg-color), #ab8ff900);
-    z-index: 998;
-}
-.header__absolute {
-    grid-area: header;
-    width: 100%;
-    /* border: 2px solid red; */
-    display: flex;
     position: absolute;
     /* background-color: #ab8ff9; */
     /* background-color: linear-gradient(#ab8ff9, rgba(255, 255, 255, 0)); */

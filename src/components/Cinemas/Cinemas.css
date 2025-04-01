@@ -11,10 +11,22 @@
     object-position: center 63%;
 }
 
+.cines__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.cinemas__title{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin: 3rem auto;
+    text-align: center;
+}
 
 @media (min-width: 1024px) {
     .banner__cinemas{
-        height: 150px;
+        height: 125px;
     }
 
 }
@@ -22,6 +34,6 @@
 
 @media (min-width: 1500px) {
     .banner__cinemas{
-        height: 200px;
+        height: 150px;
     }
 }
