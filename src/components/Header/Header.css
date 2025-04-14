@@ -172,19 +172,26 @@ body.modal-open {
 
 .form__button{
     background-color: var(--secondary-color);
-    width: 55%;
-    height: 15%;
+    width: 60%;
+    height: 50px;
     border-radius: 5px;
     border-color: var(--secondary-color);
     margin: 1rem auto;
     color: var(--main-bg-color);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .form__button:hover{
     transform: scale(1.1);
     transition: transform 0.3s;
     cursor: pointer;
+}
+
+.form__error{
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -221,7 +228,7 @@ body.modal-open {
     }
 
     .container__title{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .form__label{
@@ -229,10 +236,6 @@ body.modal-open {
     }
     .form__input{
         font-size: 1.4rem;
-    }
-
-    .form__button{
-        font-size: 1.2rem;
     }
 }
 

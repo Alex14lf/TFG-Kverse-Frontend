@@ -18,7 +18,7 @@
     gap: 2rem;
 }
 .cinemas__title{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
     margin: 3rem auto;
     text-align: center;
@@ -31,9 +31,3 @@
 
 }
 
-
-@media (min-width: 1500px) {
-    .banner__cinemas{
-        height: 150px;
-    }
-}

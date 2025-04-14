@@ -1,27 +1,65 @@
-.banner__signup{
+.banner__signup {
     width: 100%;
     height: 100px;
     position: relative;
 }
 
-.banner__imgs{
+.banner__imgs {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center 45%;
 }
 
+.container__register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
 
-@media (min-width: 1024px) {
-    .banner__signup{
-        height: 125px;
+.containerflex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.containercolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.success-message{
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .containerflex {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .containercolumn {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
     }
 
 }
 
-
-@media (min-width: 1500px) {
-    .banner__signup{
-        height: 150px;
+@media (min-width: 1024px) {
+    .banner__signup {
+        height: 125px;
     }
+
 }
