@@ -1,10 +1,10 @@
-.movdet__billboard{
+.movdet__billboard {
     width: 100%;
     height: 300px;
     position: relative;
 }
 
-.movdet__img{
+.movdet__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -14,7 +14,7 @@
     opacity: 0.6;
 }
 
-.info__title{
+.info__title {
     position: relative;
     text-transform: uppercase;
     margin-top: -20px;
@@ -23,7 +23,7 @@
     margin-left: 1rem;
 }
 
-.movdet__container{
+.movdet__container {
     /* border: 1px solid rgb(58, 253, 156); */
     position: relative;
     display: flex;
@@ -32,28 +32,28 @@
     /* justify-content: space-between; */
 }
 
-.container__img{
+.container__img {
     display: none;
     width: 150px;
     height: 200px;
     margin-top: -35px;
 }
 
-.containers{
+.containers {
     display: flex;
     flex-direction: column;
     /* gap: 1rem; */
     /* margin-left: 1rem; */
 }
 
-.container__info{
+.container__info {
     display: flex;
     flex-direction: column;
     max-width: 80%;
 }
 
 
-.info__subtitle{
+.info__subtitle {
     color: var(--secondary-color);
     font-size: 1rem;
     text-transform: uppercase;
@@ -62,78 +62,244 @@
     margin-top: 1rem;
 }
 
-.info__description{
+.info__description {
     font-size: 0.8rem;
 }
 
 
+/* Contenedor principal para la sección de proyecciones */
+.proyecciones__container {
+    margin: 3rem 0;
+}
+
+/* Estilo para el contenedor de los días */
+.days__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Estilo de cada botón de día */
+.day__button {
+    text-align: center;
+    font-size: 1rem;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.day__button.active {
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color) 2px solid;
+}
+
+.day__button:hover {
+    color: var(--secondary-color);
+    border-bottom: var(--secondary-color) 2px solid;
+}
+
+/* Estilo para el contenedor de las horas */
+.hours__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+/* Estilo de los botones de horas */
+.hour__button {
+    /* background-color: var(--secondary-color); */
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 0 0 1rem;
+}
+
+.hour__button:hover {
+    border-color: var(--secondary-color);
+}
+
+.hour__button:hover .hour__p {
+    color: var(--secondary-color);
+}
+
+.hour__button.active {
+    border-color: var(--secondary-color);
+}
+
+.hour__button.active .hour__p {
+    color: var(--secondary-color);
+}
+
+
+
+.hour__p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.mapa__asientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.mapa-asientos__asiento-icono {
+    font-size: 0.7rem;
+    margin: 2px;
+}
+
+.mapa-asientos__asiento-icono:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.mapa-asientos__numero-asiento {
+    text-align: center;
+}
+
+.mapa-asientos__texto {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pantalla__container {
+    margin-top: 1rem;
+    width: 60%;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.pantalla__text {
+    font-size: 1.3rem;
+}
+
+.mapa-asientos__reservar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.mapa-asientos__reservar-boton {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mapa-asientos__reservar-boton:hover {
+    transform: scale(0.95);
+    transition: transform 0.3s;
+}
+
+.mensaje-login {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.mapa-asientos__asiento--ocupado {
+    cursor: not-allowed;
+    pointer-events: none;
+}
 
 
 @media (min-width: 650px) {
-    .container__img{
+    .container__img {
         display: flex;
     }
 
-    .info__title{
+    .info__title {
         text-align: center;
     }
 
-    .containers{
+    .containers {
         margin-left: 2.5rem;
     }
 
-    .container__extra{
+    .container__extra {
         display: flex;
         gap: 2rem;
     }
+
+    .mapa-asientos__asiento-icono {
+        font-size: 1.2rem;
+        padding: 1rem 0.2rem;
+        /* tamaño más grande del icono */
+    }
 }
+
 @media (min-width: 1024px) {
 
-    .movdet__container{
+    .movdet__container {
         margin-left: 2.5rem;
     }
-    .movdet__billboard{
+
+    .movdet__billboard {
         height: 420px;
     }
 
-    .info__title{
+    .info__title {
         font-size: 2.5rem;
         margin-top: -25px;
     }
 
-    .container__img{
+    .container__img {
         width: 200px;
         height: 300px;
         margin-top: -60px;
     }
-    
-    .info__subtitle{
+
+    .info__subtitle {
         font-size: 1.3rem;
     }
 
-    .info__description{
+    .info__description {
         font-size: 1rem;
     }
 
-    .containers{
+    .containers {
         flex-direction: row;
     }
 
-    .container__extra{
+    .container__extra {
         flex-direction: column;
         gap: 0;
         margin-left: 1rem;
     }
 
+    .mapa-asientos__asiento-icono {
+        font-size: 2rem;
+        padding: 1rem 0.3rem;
+        /* tamaño más grande del icono */
+    }
+
 }
 
 @media (min-width: 1500px) {
-    .movdet__container{
+    .movdet__container {
         margin-left: 3rem;
     }
 
-    .container__img{
+    .container__img {
         width: 300px;
         height: 400px;
+    }
+
+    .mapa-asientos__asiento-icono {
+        font-size: 2.5rem;
+        padding: 1rem 0.5rem;
+        /* tamaño más grande del icono */
     }
 }

@@ -9,14 +9,12 @@ import Cinemas from './components/Cinemas/Cinemas';
 import Experiences from './components/Experiences/Experiences';
 import SignUp from './components/SignUp/SignUp';
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
-import { AuthProvider } from './context/AuthContext'; // Asegúrate de importar el AuthProvider
+import PersonalArea from './components/PersonalArea/PersonalArea';
 
 createRoot(document.getElementById('root')).render(
     <ErrorBoundary>
         {/* Aquí estamos envolviendo la app con AuthProvider para que toda la aplicación tenga acceso al contexto */}
-
         <BrowserRouter>
-            <AuthProvider>
                 <Routes>
                     {/* La ruta raíz será Layout */}
                     <Route path='/' element={<Layout />}>
@@ -26,10 +24,9 @@ createRoot(document.getElementById('root')).render(
                         <Route path='cinemas' element={<Cinemas />} />
                         <Route path='experiences' element={<Experiences />} />
                         <Route path='signup' element={<SignUp />} />
-                        <Route path='profile' element={<SignUp />} />
+                        <Route path='profile' element={<PersonalArea />} />
                     </Route>
                 </Routes>
-            </AuthProvider>
         </BrowserRouter>
     </ErrorBoundary>
 );

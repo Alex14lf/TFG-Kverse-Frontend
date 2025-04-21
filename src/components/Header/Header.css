@@ -243,9 +243,7 @@ body.modal-open {
     .nav{
         margin: 1.5rem 3rem;
     }
-    .fa-solid{
-        font-size: 3rem
-    }
+    
     .icon__close{
         font-size: 2rem;
     }
